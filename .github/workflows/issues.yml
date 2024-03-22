@@ -1,0 +1,11 @@
+name: Issues
+on:
+  issues:
+    branches:
+      - "main"
+jobs:
+  issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issues Logs
+        run: echo "Issues Loged"
