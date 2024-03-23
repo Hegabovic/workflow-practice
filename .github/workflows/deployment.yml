@@ -22,7 +22,7 @@ jobs:
         run: npm run lint
   Test:
     needs: Lint
-    runs-on: ubuntu-latestSS
+    runs-on: ubuntu-latest
     steps:
       - name: Cloning Application
         uses: actions/checkout@v4
