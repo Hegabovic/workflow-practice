@@ -2,12 +2,16 @@ name: practice-workflow
 on:
   push:
     branches:
-      - "main"
+      - main
   pull_request:
     branches:
-      - "main"
+      - main         # main
+      - 'dev-*'      # dev-new      dev-this-is-new  
+      - 'feature/**' # feature/new  feature/new/button
     types:
       - opened
+    paths-ignore:
+      - '.github/workflow/*'
   workflow_dispatch:
 jobs:
   Lint:
